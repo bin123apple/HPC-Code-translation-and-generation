@@ -1,0 +1,145 @@
+[50259, 23748, 995, 220, 50257, 220, 50258]
+GPT2Config {
+  "_name_or_path": "microsoft/CodeGPT-small-java-adaptedGPT2",
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50259,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50258,
+  "gradient_checkpointing": false,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_inner": null,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "pad_token_id": 50257,
+  "reorder_and_upcast_attn": false,
+  "resid_pdrop": 0.1,
+  "scale_attn_by_inverse_layer_idx": false,
+  "scale_attn_weights": true,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "transformers_version": "4.26.0",
+  "use_cache": true,
+  "vocab_size": 50261
+}
+
+Model has a total of 124442880 trainable parameters
+Training/evaluation parameters Namespace(data_dir='../dataset/concode', langs='java', output_dir='../save/concode', model_type='gpt2', pretrain_dir='microsoft/CodeGPT-small-java-adaptedGPT2', config_dir=None, tokenizer_dir=None, load_name='pretrained', mlm=False, mlm_probability=0.15, cache_dir='', block_size=512, do_train=True, do_eval=False, do_infer=False, evaluate_during_training=True, do_lower_case=False, per_gpu_train_batch_size=6, per_gpu_eval_batch_size=12, gradient_accumulation_steps=2, learning_rate=5e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=30.0, max_steps=-1, warmup_steps=0, logging_steps=100, save_steps=5000, save_total_limit=None, eval_all_checkpoints=False, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=0, node_index=0, gpu_per_node=1, server_ip='', server_port='', log_file='text2code_concode.log', tensorboard_dir=None, n_gpu=1, device=device(type='cuda', index=0), start_epoch=0, start_step=0)
+Creating features from dataset file at ../dataset/concode/train.json
+Data size: 100000
+Rank 0, load 0
+Rank 0, load 10
+Rank 0, load 20
+Rank 0, load 30
+Rank 0, load 40
+Rank 0, load 50
+Rank 0, load 60
+Rank 0, load 70
+Rank 0, load 80
+Rank 0, load 90
+Rank 0 Training 100000 token, 100000 samples
+Saving features into cached file ../save/concode/train_blocksize_512_wordsize_1_rank_0
+***** Running training *****
+  Num examples = 100000
+  Num epoch = 29
+  Instantaneous batch size per GPU = 6
+  Total train batch size (w. parallel, distributed & accumulation) = 12
+  Gradient Accumulation steps = 2
+  Total optimization steps = 249990
+[50259, 23748, 995, 220, 50257, 220, 50258]
+GPT2Config {
+  "_name_or_path": "microsoft/CodeGPT-small-java-adaptedGPT2",
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50259,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50258,
+  "gradient_checkpointing": false,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_inner": null,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "pad_token_id": 50257,
+  "reorder_and_upcast_attn": false,
+  "resid_pdrop": 0.1,
+  "scale_attn_by_inverse_layer_idx": false,
+  "scale_attn_weights": true,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "transformers_version": "4.26.0",
+  "use_cache": true,
+  "vocab_size": 50261
+}
+
+Model has a total of 124442880 trainable parameters
+Training/evaluation parameters Namespace(data_dir='../dataset/Fortran', langs='java', output_dir='../save/Fortran', model_type='gpt2', pretrain_dir='microsoft/CodeGPT-small-java-adaptedGPT2', config_dir=None, tokenizer_dir=None, load_name='pretrained', mlm=False, mlm_probability=0.15, cache_dir='', block_size=512, do_train=True, do_eval=False, do_infer=False, evaluate_during_training=True, do_lower_case=False, per_gpu_train_batch_size=6, per_gpu_eval_batch_size=12, gradient_accumulation_steps=2, learning_rate=5e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=30.0, max_steps=-1, warmup_steps=0, logging_steps=100, save_steps=5000, save_total_limit=None, eval_all_checkpoints=False, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=0, node_index=0, gpu_per_node=2, server_ip='', server_port='', log_file='text2code_concode.log', tensorboard_dir=None, n_gpu=1, device=device(type='cuda', index=0), start_epoch=0, start_step=0)
+Creating features from dataset file at ../dataset/Fortran/train.json
+Data size: 66
+Rank 0, load 0
+Rank 0, load 10
+Rank 0, load 20
+Rank 0, load 30
+Rank 0, load 40
+Rank 0, load 50
+Rank 0, load 60
+Rank 0, load 70
+Rank 0, load 80
+Rank 0, load 90
+Rank 0, load 100
+Rank 0 Training 66 token, 33 samples
+Saving features into cached file ../save/Fortran/train_blocksize_512_wordsize_2_rank_0
+Creating features from dataset file at ../dataset/Fortran/train.json
+Rank 1, load 0
+Rank 1, load 10
+Rank 1, load 20
+Rank 1, load 30
+Rank 1, load 40
+Rank 1, load 50
+Rank 1, load 60
+Rank 1, load 70
+Rank 1, load 80
+Rank 1, load 90
+Rank 1, load 100
+Rank 1 Training 66 token, 33 samples
+Saving features into cached file ../save/Fortran/train_blocksize_512_wordsize_2_rank_1
+***** Running training *****
+  Num examples = 66
+  Num epoch = 21
+  Instantaneous batch size per GPU = 6
+  Total train batch size (w. parallel, distributed & accumulation) = 24
+  Gradient Accumulation steps = 2
+  Total optimization steps = 60
