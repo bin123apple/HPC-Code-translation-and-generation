@@ -4,6 +4,8 @@ The main task of this github is to test the translation and generation performan
 CodeXGLUE : https://github.com/microsoft/CodeXGLUE  
 ChatGPT : https://openai.com/blog/chatgpt/
 
+The origianl Fortran HPC dataset can be downloaded from https://github.com/OMPI-X/epcc-mixedmode
+
 ## Task1: Code to Code Translation
 
 ### Fortran to C translation by using Fine-tuned CodeBERT model
