@@ -123,6 +123,16 @@ NOTE: Our fortran HPC is not sufficient to support training this large model, Th
 python calc_code_bleu.py --refs /path/to/ChatGPT_results/result.gold --hyp /path/to/ChatGPT_results/ChatGPT_result.output --lang c_sharp --params 0.25,0.25,0.25,0.25
 ```
 
+## Reference 
+
+```
+@article{lu2021codexglue,
+  title={Codexglue: A machine learning benchmark dataset for code understanding and generation},
+  author={Lu, Shuai and Guo, Daya and Ren, Shuo and Huang, Junjie and Svyatkovskiy, Alexey and Blanco, Ambrosio and Clement, Colin and Drain, Dawn and Jiang, Daxin and Tang, Duyu and others},
+  journal={arXiv preprint arXiv:2102.04664},
+  year={2021}
+}
+```
 
 
 
