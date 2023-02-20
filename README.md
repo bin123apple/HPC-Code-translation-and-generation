@@ -121,8 +121,7 @@ NOTE: Our fortran HPC is not sufficient to support training this large model, Th
 Question provided to ChatGPT, take FT calculation as an example: 
 
 ```
-Please help me to write some Fortran HPC code to implements the time integration of a three-dimensional 
-partial differential equation using the Fast Fourier Transform.
+Please help me to write some Fortran HPC code to implements the time integration of a three-dimensional partial differential equation using the Fast Fourier Transform.
 Please add OpenMP (Open Multi-Processing) directives into the code to make it run in parallel.
 Please add MPI (Message Passing Interface) calls into the code to make it run in parallel in a cluster.
 ```
