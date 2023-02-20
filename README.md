@@ -118,6 +118,14 @@ python -u run.py \
 NOTE: Our fortran HPC is not sufficient to support training this large model, Therefore the generated results are not ideal. If you want to test the text-code generation in a large Java dataset, Check the original project https://github.com/microsoft/CodeXGLUE/tree/main/Text-Code/text-to-code. Although their result is also not ideal :).
 
 ### Text to Fortran HPC Code generation by using ChatGPT.
+Question provided to ChatGPT, take FT calculation as an example: 
+
+```
+Please help me to write some Fortran HPC code to implements the time integration of a three-dimensional 
+partial differential equation using the Fast Fourier Transform.
+Please add OpenMP (Open Multi-Processing) directives into the code to make it run in parallel.
+Please add MPI (Message Passing Interface) calls into the code to make it run in parallel in a cluster.
+```
 
 ```
 python calc_code_bleu.py --refs /path/to/ChatGPT_results/result.gold --hyp /path/to/ChatGPT_results/ChatGPT_result.output --lang c_sharp --params 0.25,0.25,0.25,0.25
