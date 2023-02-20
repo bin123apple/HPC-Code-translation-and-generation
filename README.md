@@ -1,6 +1,6 @@
 # HPC-Code-translation-and-generation
 
-The main task of this github is to test the translation and generation performance of fortran HPC code using some existing open source projects
+The main task of this github is to test the translation and generation performance of fortran HPC code using some existing open source projects  
 CodeXGLUE : https://github.com/microsoft/CodeXGLUE  
 ChatGPT : https://openai.com/blog/chatgpt/
 
