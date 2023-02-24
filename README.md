@@ -8,7 +8,7 @@ The origianl Fortran HPC dataset can be downloaded from https://github.com/OMPI-
 
 ## Task1: Code to Code Translation
 
-### Fortran to C translation by using Fine-tuned CodeBERT model
+### Fortran to C++ translation by using Fine-tuned CodeBERT model
 The fine-tuned CodeBERT model is in https://drive.google.com/file/d/177B19VLstHLXQYAdjce29EDZ1AWEUTV-/view?usp=share_link
 
 Test BLEU score
@@ -44,7 +44,7 @@ cd path/to/CodeBLEU/
 python calc_code_bleu.py --refs /path/to/your output file/test_1.gold --hyp /path/to/your output file/test_1.output --lang c_sharp --params 0.25,0.25,0.25,0.25
 ```
 
-### Fortran to C translation by using ChatGPT
+### Fortran to C++ translation by using ChatGPT
 The question provided to chatGPT: Please help me to translate the following C code(The C code in our test dataset) to Fortran code.
 NOTE: ChatGPT may generate different answers each time. The answer I got is shown in /Code to Code Translation dataset/ChatGPT_test_answer.output 
 
