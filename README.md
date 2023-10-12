@@ -134,7 +134,69 @@ python calc_code_bleu.py --refs /path/to/ChatGPT_results/result.gold --hyp /path
 
 ## Task3: Create our own model for the HPC code translation
 
-Please ref to the ./OpenMP-Fortran-CPP-Translation folder for the detail.
+Our paper is avaliable at [http://arxiv.org/abs/2307.07686](http://arxiv.org/abs/2307.07686).
+
+This folder contains training and testing dataset and a simple test script.
+
+We collect data form three different source: 
+
+[Polybench](https://web.cse.ohio-state.edu/~pouchet.2/software/polybench/)
+
+[NAS Parallel Benchmarks](https://www.nas.nasa.gov/software/npb.html)
+
+[dataracebench](https://github.com/LLNL/dataracebench)
+
+You can also download the dataset from : [My Huggingface](https://huggingface.co/datasets/Bin12345/HPC_Fortran_CPP)
+
+Here is one data pair example:
+
+![Here is one data pair example:](https://github.com/bin123apple/OpenMP-Fortran-CPP-Translation/blob/main/Figures/Data%20Pair%20Example.png)
+
+We will add more data pairs in the future and will add a new "nature language" column for code generation task.
+
+## Reproduce our result
+
+1. Finetune the model by using deepspeed
+```
+deepspeed --master_port 12345 main.py \
+   --data_path Bin12345/HPC_Fortran_CPP \
+   --model_name_or_path path/to/starcoder_model \
+   --per_device_train_batch_size 1 \
+   --per_device_eval_batch_size 1 \
+   --max_seq_len 128 \
+   --learning_rate 9.65e-6 \
+   --weight_decay 0.1 \
+   --num_train_epochs 3 \
+   --gradient_accumulation_steps 2 \
+   --lr_scheduler_type cosine \
+   --num_warmup_steps 0 \
+   --seed 1234 \
+   --zero_stage $ZERO_STAGE \
+   --deepspeed \
+   --output_dir $OUTPUT \
+   &> $OUTPUT/training.log
+```
+
+2. Use the finetuned model to generate the prompts. Change the 
+```
+model = OPTForCausalLM.from_pretrained("facebook/opt-2.7b").to('cuda:2')
+tokenizer = AutoTokenizer.from_pretrained("facebook/opt-2.7b")
+```
+Inside the 'Simple_test_script.py' to 
+```
+model = OPTForCausalLM.from_pretrained("path/to/the/fintuned_model").to('cuda:2')
+tokenizer = AutoTokenizer.from_pretrained("path/to/the/fintuned_model")
+```
+Then run:
+```
+python Simple_test_script.py
+```
+You can try our simple test scripts. And for different models, there might be slightly difference.
+
+3. Then test the CodeBlue Score
+```
+python calc_code_bleu.py --refs path/to/groundtruth.txt --hyp path/to/the_generated_answers/by_the_finetuned_model
+```
 
 ## Reference 
 
