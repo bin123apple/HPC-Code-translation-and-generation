@@ -190,7 +190,6 @@ tokenizer = AutoTokenizer.from_pretrained("path/to/the/fintuned_model")
 Then run:
 ```
 python Simple_test_script.py
-
 ```
 You can try our simple test scripts. And for different models, there might be slightly difference.
 
