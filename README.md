@@ -195,6 +195,7 @@ You can try our simple test scripts. And for different models, there might be sl
 
 3. Then test the CodeBlue Score
 ```
+cd CodeBLUE
 python calc_code_bleu.py --refs path/to/groundtruth.txt --hyp path/to/the_generated_answers/by_the_finetuned_model
 ```
 
