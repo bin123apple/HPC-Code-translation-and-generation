@@ -182,7 +182,7 @@ deepspeed --master_port 12345 main.py \
 model = OPTForCausalLM.from_pretrained("facebook/opt-2.7b").to('cuda:2')
 tokenizer = AutoTokenizer.from_pretrained("facebook/opt-2.7b")
 ```
-Inside the 'Simple_test_script.py' to 
+Inside the `Simple_test_script.py` to 
 ```
 model = OPTForCausalLM.from_pretrained("path/to/the/fintuned_model").to('cuda:2')
 tokenizer = AutoTokenizer.from_pretrained("path/to/the/fintuned_model")
@@ -190,6 +190,7 @@ tokenizer = AutoTokenizer.from_pretrained("path/to/the/fintuned_model")
 Then run:
 ```
 python Simple_test_script.py
+
 ```
 You can try our simple test scripts. And for different models, there might be slightly difference.
 
