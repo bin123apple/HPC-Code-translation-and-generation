@@ -129,8 +129,12 @@ Please add MPI (Message Passing Interface) calls into the code to make it run in
 ```
 
 ```
-python calc_code_bleu.py --refs /path/to/ChatGPT_results/result.gold --hyp /path/to/ChatGPT_results/ChatGPT_result.output --lang c_sharp --params 0.25,0.25,0.25,0.25
+python calc_code_bleu.py --refs /path/to/ChatGPT_results/result.gold --hyp /path/to/ChatGPT_results/ChatGPT_result.output 
 ```
+
+## Task3: Create our own model for the HPC code translation
+
+Please ref to the ./OpenMP-Fortran-CPP-Translation folder for the detail.
 
 ## Reference 
 
@@ -141,7 +145,25 @@ python calc_code_bleu.py --refs /path/to/ChatGPT_results/result.gold --hyp /path
   journal={arXiv preprint arXiv:2102.04664},
   year={2021}
 }
+
+@article{lei2023creating,
+  title={Creating a Dataset Supporting Translation Between OpenMP Fortran and C++ Code},
+  author={Lei, Bin and Ding, Caiwen and Chen, Le and Lin, Pei-Hung and Liao, Chunhua},
+  journal={arXiv preprint arXiv:2307.07686},
+  year={2023}
+}
 ```
+
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
 
 

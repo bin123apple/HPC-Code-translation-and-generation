@@ -13,7 +13,7 @@ parser.add_argument('--refs', type=str, nargs='+', required=True,
                         help='reference files')
 parser.add_argument('--hyp', type=str, required=True, 
                         help='hypothesis file')
-parser.add_argument('--lang', type=str, required=True, 
+parser.add_argument('--lang', type=str, required=True, default= "c_sharp",
                         choices=['java','js','c_sharp','php','go','python','ruby'],
                         help='programming language')
 parser.add_argument('--params', type=str, default='0.25,0.25,0.25,0.25',
