@@ -209,11 +209,12 @@ python calc_code_bleu.py --refs path/to/groundtruth.txt --hyp path/to/the_genera
   year={2021}
 }
 
-@article{lei2023creating,
-  title={Creating a Dataset Supporting Translation Between OpenMP Fortran and C++ Code},
-  author={Lei, Bin and Ding, Caiwen and Chen, Le and Lin, Pei-Hung and Liao, Chunhua},
-  journal={arXiv preprint arXiv:2307.07686},
-  year={2023}
+@inproceedings{lei2023creating,
+      title={Creating a Dataset for High-Performance Computing Code Translation using LLMs: A Bridge Between OpenMP Fortran and C++}, 
+      author={Bin Lei and Caiwen Ding and Le Chen and Pei-Hung Lin and Chunhua Liao},
+  booktitle={High Performance Extreme Computing Conference (HPEC), 2023 IEEE},
+  year={2023},
+  organization={IEEE}
 }
 ```
 
