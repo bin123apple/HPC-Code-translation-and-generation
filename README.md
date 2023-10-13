@@ -213,7 +213,7 @@ python calc_code_bleu.py --refs path/to/groundtruth.txt --hyp path/to/the_genera
 @inproceedings{lei2023creating,
       title={Creating a Dataset for High-Performance Computing Code Translation using LLMs: A Bridge Between OpenMP Fortran and C++}, 
       author={Lei, Bin and Ding, Caiwen and Chen, Le and  Lin, Pei-Hung and Liao, Chunhua},
-  booktitle={High Performance Extreme Computing Conference (HPEC), 2023 IEEE},
+  booktitle={High Performance Extreme Computing Conference (HPEC)},
   year={2023},
   organization={IEEE}
 }
