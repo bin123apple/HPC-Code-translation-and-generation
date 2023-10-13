@@ -45,7 +45,7 @@ python calc_code_bleu.py --refs /path/to/your output file/test_1.gold --hyp /pat
 ```
 
 ### Fortran to C++ translation by using ChatGPT
-The question provided to chatGPT: Please help me to translate the following C code(The C code in our test dataset) to Fortran code.
+The question provided to chatGPT: Please help me to translate the following C code (The C code in our test dataset) to Fortran code.
 NOTE: ChatGPT may generate different answers each time. The answer I got is shown in /Code to Code Translation dataset/ChatGPT_test_answer.output 
 
 Test BLEU score and CodeBLEU score
