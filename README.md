@@ -154,7 +154,7 @@ Here is one data pair example:
 
 We will add more data pairs in the future and will add a new "nature language" column for code generation task.
 
-## Reproduce our result
+## Reproduce our results
 
 1. Finetune the model by using deepspeed
 ```
@@ -176,6 +176,7 @@ deepspeed --master_port 12345 main.py \
    --output_dir $OUTPUT \
    &> $OUTPUT/training.log
 ```
+If you want to finetune the other models (for example OPT models), you just need to change the `--model_name_or_path` from `path/to/starcoder_model` to `path/to/OPT_models`.
 
 2. Use the finetuned model to generate the prompts. Change the 
 ```
