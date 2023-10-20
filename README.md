@@ -45,7 +45,7 @@ python calc_code_bleu.py --refs /path/to/your output file/test_1.gold --hyp /pat
 ```
 
 ### Fortran to C++ translation by using ChatGPT
-The question provided to chatGPT: Please help me to translate the following C code(The C code in our test dataset) to Fortran code.
+The question provided to chatGPT: Please help me to translate the following C code (The C code in our test dataset) to Fortran code.
 NOTE: ChatGPT may generate different answers each time. The answer I got is shown in /Code to Code Translation dataset/ChatGPT_test_answer.output 
 
 Test BLEU score and CodeBLEU score
@@ -154,7 +154,7 @@ Here is one data pair example:
 
 We will add more data pairs in the future and will add a new "nature language" column for code generation task.
 
-## Reproduce our result
+## Reproduce our results
 
 1. Finetune the model by using deepspeed
 ```
@@ -176,6 +176,7 @@ deepspeed --master_port 12345 main.py \
    --output_dir $OUTPUT \
    &> $OUTPUT/training.log
 ```
+If you want to finetune the other models (for example OPT models), you just need to change the `--model_name_or_path` from `path/to/starcoder_model` to `path/to/OPT_models`.
 
 2. Use the finetuned model to generate the prompts. Change the 
 ```
@@ -209,24 +210,15 @@ python calc_code_bleu.py --refs path/to/groundtruth.txt --hyp path/to/the_genera
   year={2021}
 }
 
-@article{lei2023creating,
-  title={Creating a Dataset Supporting Translation Between OpenMP Fortran and C++ Code},
-  author={Lei, Bin and Ding, Caiwen and Chen, Le and Lin, Pei-Hung and Liao, Chunhua},
-  journal={arXiv preprint arXiv:2307.07686},
-  year={2023}
+@inproceedings{lei2023creating,
+      title={Creating a Dataset for High-Performance Computing Code Translation using LLMs: A Bridge Between OpenMP Fortran and C++}, 
+      author={Lei, Bin and Ding, Caiwen and Chen, Le and  Lin, Pei-Hung and Liao, Chunhua},
+  booktitle={High Performance Extreme Computing Conference (HPEC)},
+  year={2023},
+  organization={IEEE}
 }
 ```
 
-Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
-
-This work is licensed under a
-[Creative Commons Attribution 4.0 International License][cc-by].
-
-[![CC BY 4.0][cc-by-image]][cc-by]
-
-[cc-by]: http://creativecommons.org/licenses/by/4.0/
-[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
 
 
