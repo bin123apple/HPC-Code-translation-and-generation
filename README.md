@@ -199,6 +199,7 @@ You can try our simple test scripts. And for different models, there might be sl
 cd CodeBLUE
 python calc_code_bleu.py --refs path/to/groundtruth.txt --hyp path/to/the_generated_answers/by_the_finetuned_model
 ```
+For the detail reproduce steps, please check this Colab: https://drive.google.com/file/d/1QqkGskaPPUKvjzwn_dmaV9z3yB9z2Vyu/view?usp=sharing
 
 ## Reference 
 
