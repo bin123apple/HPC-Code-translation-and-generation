@@ -136,6 +136,8 @@ python calc_code_bleu.py --refs /path/to/ChatGPT_results/result.gold --hyp /path
 
 Our paper is avaliable at [http://arxiv.org/abs/2307.07686](http://arxiv.org/abs/2307.07686).
 
+For the detail reproduce steps, please check this Colab: https://drive.google.com/file/d/1QqkGskaPPUKvjzwn_dmaV9z3yB9z2Vyu/view?usp=sharing
+
 This folder contains training and testing dataset and a simple test script.
 
 We collect data form three different source: 
@@ -199,7 +201,6 @@ You can try our simple test scripts. And for different models, there might be sl
 cd CodeBLUE
 python calc_code_bleu.py --refs path/to/groundtruth.txt --hyp path/to/the_generated_answers/by_the_finetuned_model
 ```
-For the detail reproduce steps, please check this Colab: https://drive.google.com/file/d/1QqkGskaPPUKvjzwn_dmaV9z3yB9z2Vyu/view?usp=sharing
 
 ## Reference 
 
